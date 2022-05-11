@@ -1,2 +1,4 @@
 #!/bin/sh
-dmenu_path | dmenu "$@" | ${SHELL:-"/bin/sh"} &
+#You can add -c option to make dmenu centered on screen (default is on top) 
+#Use -l to set number of lines to display
+dmenu_path | dmenu -p /bin/bash  &
